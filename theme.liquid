@@ -7,3 +7,8 @@ CSS goes in header, JS goes in footer
 {{ 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' | stylesheet_tag }}
 {{ '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js' | script_tag }}
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js' | script_tag }}
+
+{% comment %}
+Before the </body> tag, add this line:
+{% endcomment %}
+<div id="quick-view" style="display: none; opacity: 0"></div>
